@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet"href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page with Nav Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1>Prodigy Infotech</h1>
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>About me</li>
+                <li>Sevices</li>
+                <li>Contact</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Hello I am Kirsagar Akash</p>
+            <p class="msg">I am working on a professional, visually sophisticated and
+                technologically proficient, responsive and multi-functional
+                tasks.</p>
+            <button class="cta">Contact Me</button>
+        </section>
+
+        <section class="right">
+            <img src="./images/images__9_-removebg-preview.png" alt="Langing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
